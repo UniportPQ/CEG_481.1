@@ -26,27 +26,28 @@
     "Subheading": "Part (a): Capillary Tube Viscosity Determination"
   },
   {
-  "type": "Question",
-  "name": "Venturi Meter Flow Rate",
-  "topic": [
-    "Fluid Mechanics",
-    "Flow Measurement",
-    "Venturi Meter",
-    "Bernoulli's Equation"
-  ],
-  "Question": {
-    "content": "A venturi meter with a throat diameter of 50 mm is inserted in a 100 mm diameter horizontal pipeline. The pressure difference between the inlet and throat sections is measured as 40 cm of water column. Assuming the coefficient of discharge of the venturi meter to be 0.98, calculate the rate of flow of water through the pipe.",
-    "type": "subjective"
+    "type": "Question",
+    
+    "name": "Question 1(a)",
+    "topic": [
+      "Viscosity",
+      "Capillary Flow",
+      "Fluid Mechanics",
+      "Poiseuille's Law"
+    ],
+    "Question": {
+      "content": "The time taken for water to flow through a capillary tube is 30 seconds, while the time taken for oil to flow through the same capillary tube is 60 seconds. If the density of water is 1000 kg/m³ and the density of oil is 850 kg/m³, determine the viscosity of the oil.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The viscosity of the oil is 1.7 times the viscosity of water. If water viscosity is taken as 1.0 × 10⁻³ Pa·s, then oil viscosity = 1.7 × 10⁻³ Pa·s."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🧪 Capillary Tube Viscometer Method</h4>\n \n <p>When a fluid flows through a capillary tube under its own weight (due to gravity), the flow rate is governed by <strong>Poiseuille's Law</strong>. The time taken for a fixed volume to flow is proportional to the fluid's viscosity and inversely proportional to its density.</p>\n \n <div style='background: var(--preset-bg-color); padding: 12px; border-radius: 8px; margin: 15px 0;'>\n <strong style='color: var(--strongColor);'>📐 Step-by-Step Derivation:</strong>\n \n <p><strong>Step 1: Recall Poiseuille's Law</strong></p>\n \\[ Q = \\frac{\\pi r^4 \\Delta P}{8 \\mu L} \\]\n <p>Where Q = flow rate, r = tube radius, ΔP = pressure difference, μ = viscosity, L = tube length.</p>\n \n <p><strong>Step 2: Relate Flow Rate to Time</strong></p>\n <p>For a fixed volume V flowing through:</p>\n \\[ Q = \\frac{V}{t} \\]\n <p>So:</p>\n \\[ \\frac{V}{t} = \\frac{\\pi r^4 \\Delta P}{8 \\mu L} \\]\n \n <p><strong>Step 3: Pressure Difference Due to Gravity</strong></p>\n <p>When fluid flows under its own weight, the pressure difference is hydrostatic:</p>\n \\[ \\Delta P = \\rho g h \\]\n <p>Where ρ = fluid density, g = gravity, h = height difference.</p>\n \n <p><strong>Step 4: Combine the Equations</strong></p>\n \\[ \\frac{V}{t} = \\frac{\\pi r^4 (\\rho g h)}{8 \\mu L} \\]\n \\[ \\mu = \\frac{\\pi r^4 \\rho g h t}{8 V L} \\]\n \n <p><strong>Step 5: Set Up Ratio for Two Fluids</strong></p>\n <p>For the same capillary tube (r, L, V, h, g are identical), and comparing water (w) and oil (o):</p>\n \\[ \\frac{\\mu_o}{\\mu_w} = \\frac{\\rho_o \\times t_o}{\\rho_w \\times t_w} \\]\n </div>\n \n <div style='background: var(--preset-bg-color); padding: 12px; border-radius: 8px; margin: 15px 0;'>\n <strong style='color: var(--strongColor);'>🔢 Calculation:</strong>\n \n <p>Given:</p>\n <ul>\n <li>t_w = 30 seconds</li>\n <li>t_o = 60 seconds</li>\n <li>ρ_w = 1000 kg/m³</li>\n <li>ρ_o = 850 kg/m³</li>\n </ul>\n \n \\[ \\frac{\\mu_o}{\\mu_w} = \\frac{850 \\times 60}{1000 \\times 30} \\]\n \\[ \\frac{\\mu_o}{\\mu_w} = \\frac{51,000}{30,000} \\]\n \\[ \\frac{\\mu_o}{\\mu_w} = 1.7 \\]\n \n <p>Therefore:</p>\n \\[ \\mu_o = 1.7 \\times \\mu_w \\]\n </div>\n \n <div style='background: var(--infoBg); padding: 12px; border-radius: 8px; color: var(--infoCl); margin: 15px 0;'>\n <strong>💡 Numerical Value (If Needed):</strong><br>\n If we take water viscosity at room temperature as μ_w = 1.0 × 10⁻³ Pa·s, then:<br>\n <strong style='font-size: 1.1rem;'>μ_o = 1.7 × 10⁻³ Pa·s</strong>\n </div>\n \n <div style='background: var(--warningBg); padding: 12px; border-radius: 8px;'>\n <strong>⚠️ Important Note:</strong><br>\n This method assumes:<br>\n • Flow is laminar (low Reynolds number)<br>\n • The same driving head (h) is used for both fluids<br>\n • The tube is uniform and straight<br>\n • End effects are negligible\n </div>\n \n <p style='margin-top: 15px;'><strong>🎓 Final Answer:</strong> The viscosity of the oil is <strong style='color: var(--strongColor);'>1.7 times the viscosity of water</strong> (or μ_o = 1.7 × 10⁻³ Pa·s at room temperature).</p>\n</div>"
+    }
   },
-  "Answer": {
-    "type": "string",
-    "content": "The rate of flow of water is 5.565 × 10⁻³ m³/s (approximately 5.57 L/s)."
-  },
-  "Explanation": {
-    "type": "string",
-    "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📏 Venturi Meter Flow Rate Calculation</h4>\n\n  <p>A venturi meter uses Bernoulli's equation and the continuity equation to relate the pressure difference between the inlet and throat to the flow velocity. The <strong>coefficient of discharge</strong> accounts for energy losses.</p>\n\n  <div style='background: var(--preset-bg-color); padding: 12px; border-radius: 8px; margin: 15px 0;'>\n    <strong style='color: var(--strongColor);'>📐 Step-by-Step Derivation:</strong>\n\n    <p><strong>Step 1: Known Data</strong></p>\n    <ul>\n      <li>Inlet diameter, D₁ = 100 mm = 0.1 m</li>\n      <li>Throat diameter, D₂ = 50 mm = 0.05 m</li>\n      <li>Pressure head difference, h = 40 cm of water = 0.4 m</li>\n      <li>Coefficient of discharge, C_d = 0.98</li>\n      <li>Density of water, ρ = 1000 kg/m³</li>\n      <li>Gravity, g = 9.81 m/s²</li>\n    </ul>\n\n    <p><strong>Step 2: Cross-sectional Areas</strong></p>\n    <p>Area = π/4 × (diameter)²:</p>\n    \\[ A_1 = \\frac{\\pi}{4} (0.1)^2 = 7.854 \\times 10^{-3} \\, \\text{m}^2 \\]\n    \\[ A_2 = \\frac{\\pi}{4} (0.05)^2 = 1.9635 \\times 10^{-3} \\, \\text{m}^2 \\]\n\n    <p><strong>Step 3: Diameter Ratio</strong></p>\n    \\[ \\beta = \\frac{D_2}{D_1} = 0.5 \\]\n    \\[ \\beta^4 = 0.0625 \\]\n    \\[ 1 - \\beta^4 = 0.9375 \\]\n\n    <p><strong>Step 4: Theoretical Flow Rate Formula</strong></p>\n    <p>From Bernoulli's equation for a horizontal venturi (neglecting losses first):</p>\n    \\[ Q_{\\text{theor}} = A_2 \\sqrt{\\frac{2 g h}{1 - \\beta^4}} \\]\n    <p>where h is the pressure difference in meters of fluid column.</p>\n\n    <p><strong>Step 5: Calculate Theoretical Flow Rate</strong></p>\n    <p>First compute inside the square root:</p>\n    \\[ 2 g h = 2 \\times 9.81 \\times 0.4 = 7.848 \\]\n    \\[ \\frac{7.848}{1 - \\beta^4} = \\frac{7.848}{0.9375} = 8.3712 \\]\n    \\[ \\sqrt{8.3712} = 2.8933 \\]\n\n    <p>Now multiply by throat area:</p>\n    \\[ Q_{\\text{theor}} = (1.9635 \\times 10^{-3}) \\times 2.8933 = 5.679 \\times 10^{-3} \\, \\text{m}^3/\\text{s} \\]\n    <p>(= 5.679 L/s)</p>\n\n    <p><strong>Step 6: Apply Coefficient of Discharge</strong></p>\n    <p>The coefficient of discharge accounts for real fluid effects like friction losses:</p>\n    \\[ Q_{\\text{actual}} = C_d \\times Q_{\\text{theor}} \\]\n    \\[ Q_{\\text{actual}} = 0.98 \\times 5.679 \\times 10^{-3} \\]\n    \\[ Q_{\\text{actual}} = 5.565 \\times 10^{-3} \\, \\text{m}^3/\\text{s} \\]\n  </div>\n\n  <div style='background: var(--preset-bg-color); padding: 12px; border-radius: 8px; margin: 15px 0;'>\n    <strong style='color: var(--strongColor);'>🔢 Final Calculation Summary:</strong>\n    <table style='width: 100%; margin-top: 10px; border-collapse: collapse;'>\n      <tr><td style='padding: 5px;'>Theoretical flow rate:</td><td style='padding: 5px; text-align: right;'>5.679 × 10⁻³ m³/s</td></tr>\n      <tr><td style='padding: 5px;'>Coefficient of discharge:</td><td style='padding: 5px; text-align: right;'>0.98</td></tr>\n      <tr style='background: var(--strongColor); color: white;'><td style='padding: 5px;'><strong>Actual flow rate:</strong></td><td style='padding: 5px; text-align: right;'><strong>5.565 × 10⁻³ m³/s</strong></td></tr>\n    </table>\n  </div>\n\n  <div style='background: var(--infoBg); padding: 12px; border-radius: 8px; color: var(--infoCl); margin: 15px 0;'>\n    <strong>💡 Interpretation:</strong><br>\n    The actual flow rate is <strong>5.565 L/s</strong> (since 1 m³/s = 1000 L/s). The coefficient of discharge slightly reduces the theoretical flow rate due to real-world energy losses.\n  </div>\n\n  <div style='background: var(--warningBg); padding: 12px; border-radius: 8px;'>\n    <strong>⚠️ Important Assumptions:</strong><br>\n    • Steady, incompressible flow<br>\n    • Horizontal pipe (no elevation change)<br>\n    • Negligible energy losses between the two tapping points except as accounted by C_d<br>\n    • The pressure difference measured is exactly the static pressure difference<br>\n    • The coefficient of discharge is constant and given\n  </div>\n\n  <p style='margin-top: 15px;'><strong>🎓 Final Answer:</strong> The rate of flow of water through the pipe is <strong style='color: var(--strongColor);'>5.565 × 10⁻³ m³/s</strong> (or 5.57 L/s).</p>\n</div>"
-  }
-},
   {
     "type": "heading",
     "Subheading": "Part (b): Verification of Bernoulli's Theorem"
